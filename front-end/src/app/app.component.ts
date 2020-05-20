@@ -13,19 +13,25 @@ export class AppComponent {
 
   settings = {
     columns: {
-      id: {
+      name: {
         title: 'Name',
       },
-      name: {
+      specialty: {
         title: 'Specialty',
-      }
-    }
+      },
+      
+    },
+    actions: false
+
   };
 
   private data: any = [];
   source: LocalDataSource;
+
   constructor(private http: HttpClient) {
-    this.source = new LocalDataSource(this.data);
+    this.getData();
+    this.source = new LocalDataSource(this.data);   
+    console.log(this.source);
   }
 
   //handle in case of errors
@@ -33,6 +39,8 @@ export class AppComponent {
     const url = 'http://localhost:3001/specialty';
     this.http.get(url).subscribe((res) => {
       this.data = res;
+      this.source.load(this.data);
+      console.log(this.data);
     });
   }
 
