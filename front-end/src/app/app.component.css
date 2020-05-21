@@ -1,0 +1,14 @@
+
+  /* Style the search box inside the navigation bar */
+ input[type=text] {
+    float: none;
+    padding: 6px;
+    border: 1;
+    background-color:aliceblue;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+  
+  

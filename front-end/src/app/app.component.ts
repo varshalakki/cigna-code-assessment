@@ -15,15 +15,32 @@ export class AppComponent {
     columns: {
       name: {
         title: 'Name',
+        filter: false
       },
       specialty: {
         title: 'Specialty',
-      },
-      
+        filter: false
+      },     
     },
     actions: false
-
   };
+
+  onSearch(query: string = '') {
+    if(query == ""){
+      this.source.setFilter([]);
+    } else{
+      this.source.setFilter([
+        {
+          field: 'name',
+          search: query
+        },
+        {
+          field: 'specialty',
+          search: query
+        }     
+      ], false); 
+    }
+  }
 
   private data: any = [];
   source: LocalDataSource;
