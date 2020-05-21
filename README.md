@@ -2,6 +2,7 @@
 
 ## Prerequisites
 1. Install Node.js
+2. Angular CLI
 2. Visual Studio Code (or any other editor of your choice)
 
 ## Steps to download the project locally
@@ -16,6 +17,7 @@
 
 ## Starting Angular App
 1. open another terminal
+2. run `npm install -g @angular/cli`
 2. run `ng serve`
 
 Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
