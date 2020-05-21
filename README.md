@@ -1,57 +1,29 @@
-# cigna-code-assessment
-Pre requisits-
-Install node.js
-Visual Studio Code (or any other editor of your choice)
-
-open cmd in a location where you want to download the project
-git clone git@github.com:varshalakki/cigna-code-assessment.git
-After the project is cloned, open it in the editor.
-
-Starting Server-
-Step 1: Open terminal
-Step 2: goto path cigna-code-assessment\server 
-Step 3: npm install
-Step 4: After installation is completed type nodemon server.js
-
-Startting Angular App-
-Step 1: open another terminal
-Step 2: goto path cigna-code-assessment\fron-end
-Step 3: npm install
-Step 4: After installation is completed type ng serve
-
-Goto http://localhost:4200 to access the application
-
-/* 
-    1. Exception Handling
-    2. Unit tests for UI and server
-    3. Restructuring code to use same node modules
-    4. Readme and Launch Instructions
-   */
-
 # SpecialtyFinder
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
+## Pre requisits
+1. Node.js installed
+2. Visual Studio Code (or any other editor of your choice)
 
-## Development server
+## Steps to get the project locally
+1. open cmd in a location where you want to download the project
+2. type command: git clone git@github.com:varshalakki/cigna-code-assessment.git
+3. After the project is cloned, open it in the editor.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Starting Server
+1. Open terminal
+2. navigate to path cigna-code-assessment\server 
+3. npm install
+4. After installation is completed type nodemon server.js
 
-## Code scaffolding
+## Starting Angular App
+1. open another terminal
+2. navigate to path cigna-code-assessment\fron-end
+3. npm install
+4. After installation is completed type ng serve
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Running tests
+1. open new terminal
+2. navigate to path cigna-code-assessment\server 
+3. run `npm test` to run the Jasmine test cases
